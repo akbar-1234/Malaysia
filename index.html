@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div onclick="qora()" class="qora"></div>
+    <div class="index_container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img
+                        src="https://cdn-imgix.headout.com/media/images/8e5e52883bb7069c70927a2aa45ac332-Malaysia.svg?auto=format&w=156&h=48&q=90&fit=fit"
+                        alt=""></a>
+            </div>
+            <div class="nav_left">
+                <div class="nav_links">
+                    <p><span data-translate="navbar_1_title" onmouseenter="malasia()" onmouseleave="malasia2()">Cities in Malaysia</span><svg width="16" height="16"
+                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33329 4.66675L7.99996 11.3334L14.6666 4.66675" stroke="#444444"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></p>
+                    <p><span data-translate="navbar_2_title" onmouseenter="atraction()"onmouseleave="atraction2()">Attractions</span><svg width="16" height="16"
+                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33329 4.66675L7.99996 11.3334L14.6666 4.66675" stroke="#444444"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></p>
+                    <button onclick="globe_lange()" id="language"><i class='bx bx-globe'></i><span class="navbar_lang">English</span></button>
+                </div>
+                <div class="nav_links2">
+                    <i onclick="clicks_menu()" id="globe_list" class="bi bi-globe"></i>
+                    <i id="menu_list" class="bi bi-list"></i>
+                </div>
+                <div class="nav_menu_big">
+                    <div onmouseenter="malasia()" class="red_div"></div>
+                    <div onmouseleave="atraction2()" class="nav_menu">
+                        <p><a data-translate="navbar_1_1" href="#">Kuala Lumpur</a></p>
+                        <p><a data-translate="navbar_1_2" href="#">Johor Bahru</a></p>
+                        <p><a data-translate="navbar_1_3" href="#">Langkawi</a></p>
+                        <p><a data-translate="navbar_1_4" href="#">Melaka</a></p>
+                        <p><a data-translate="navbar_1_5" href="#">Penang</a></p>
+                        <p><a data-translate="navbar_1_6" href="#">Selangor</a></p>
+                    </div>
+                </div>
+                <div class="nav_menu_big2">
+                    <div onmouseenter="atraction()" class="red_div2"></div>
+                    <div onmouseleave="atraction2()" class="nav_menu2">
+                        <p><a data-translate="navbar_2_1" href="#">Aquaria KLCC</a></p>
+                        <p><a data-translate="navbar_2_2" href="#">Genting Highlands</a></p>
+                        <p><a data-translate="navbar_2_3" href="#">Genting Awana SkyWay</a></p>
+                        <p><a data-translate="navbar_2_4" href="#">KL Tower</a></p>
+                        <p><a data-translate="navbar_2_5" href="#">Petronas Twin Towers</a></p>
+                        <p><a data-translate="navbar_2_6" href="#">Entopia Penang</a></p>
+                        <p><a data-translate="navbar_2_7" href="#">Langkawi Underwater World</a></p>
+                        <p><a data-translate="navbar_2_8" href="#">3D Trick Art Museum</a></p>
+                        <p><a data-translate="navbar_2_9" href="#">The Habitat Penang Hill</a></p>
+                        <p><a data-translate="navbar_2_10" href="#">Dark Mansion Museum</a></p>
+                        <p><a data-translate="navbar_2_11" href="#">Wonderfood Museum</a></p>
+                        <p><a data-translate="navbar_2_12" href="#">Langkawi SkyCab Cable Car</a></p>
+                        <p><a data-translate="navbar_2_13" href="#">Batu Caves</a></p>
+                        <p><a data-translate="navbar_2_14" href="#">Melaka Zoo</a></p>
+                        <p><a data-translate="navbar_2_15" href="#">LEGOLAND Malaysia</a></p>
+                        <p><a data-translate="navbar_2_16" href="#">Sunway Lagoon Theme Park</a></p>
+                        <p><a data-translate="navbar_2_17" href="#">Escape Theme Park</a></p>
+                        <p><a data-translate="navbar_2_18" href="#">Lost World of Tambun</a></p>
+                        <p><a data-translate="navbar_2_19" href="#">Crocodile Adventureland Langkawi</a></p>
+                        <p><a data-translate="navbar_2_20" href="#">KidZania Kuala Lumpur</a></p>
+                        <p><a data-translate="navbar_2_21" href="#">Ripley's Adventureland</a></p>
+                        <p><a data-translate="navbar_2_22" href="#">Desaru Coast Adventure Waterpark</a></p>
+                        <p><a data-translate="navbar_2_23" href="#">KL Tower Mini Zoo</a></p>
+                        <p><a data-translate="navbar_2_24" href="#">Genting Skyworlds Theme Park</a></p>
+                        <p><a data-translate="navbar_2_25" href="#">Genting Skytropolis Theme Park</a></p>
+                    </div>
+                </div>
+                <div class="nav_language">
+                    <div class="nav_langu_top">
+                        <p onclick="lange_p()"><a id="lan">Language</a></p>
+                        <p onclick="cure_p()"><a id="cur">Currency</a></p>
+                    </div>
+
+                    <div class="nav_langu_bot">
+                        <div class="nav_langu_for_bot for_perevods1">
+                            <a onclick="select_language(0)" data-lang="english" class="for_enlish language_active">
+                                <p>English</p>
+                                <span>English</span>
+                            </a>
+                            <a onclick="select_language(1)"  data-lang="indonesian" class="for_indonesian">
+                                <p>Malaysian</p>
+                                <span>Malaysian</span>
+                            </a>
+                        </div>
+
+                        <div class="nav_for_big_h1">
+                        </div>
+                        <div class="nav_langu_for_bot2 for_valyutas1">
+                            <a data-lang="USD" onclick="select_val(0)" class="for_dollar valyuta_active">
+                                <p>USD $</p>
+                                <span>United States Dollar</span>
+                            </a>
+                            <a data-lang="IDR" onclick="select_val(1)" class="for_rupi">
+                                <p>MYR</p>
+                                <span>Malaysian Ringgit</span>
+                            </a>
+                        </div>
+
+
+                        <!-- <div class="nav_for_big_h1">
+                            <p>More Currencies</p>
+                        </div>
+                        <div class="nav_langu_for_bot3">
+                            <a href="#">
+                                <p>AZN ₼</p>
+                                <span>Azerbaijan New Manat</span>
+                            </a>
+                            <a href="#">
+                                <p>AUD AU$ </p>
+                                <span>Australian Dollar</span>
+                            </a>
+                            <a href="#">
+                                <p>BHD</p>
+                                <span>Bahrain Dinar</span>
+                            </a>
+                            <a href="#">
+                                <p>CAD CA$</p>
+                                <span>Canadian Dollar</span>
+                            </a>
+                            <a href="#">
+                                <p>CHF</p>
+                                <span>Swiss Franc</span>
+                            </a>
+                            <a href="#">
+                                <p>CNY ¥ </p>
+                                <span>Chinese Yuan Renminbi</span>
+                            </a>
+                            <a href="#">
+                                <p>DKK</p>
+                                <span>Danish Krone</span>
+                            </a>
+                            <a href="#">
+                                <p>EGP E£ </p>
+                                <span>Egyptian Pound</span>
+                            </a>
+                            <a href="#">
+                                <p>GBP £ </p>
+                                <span>British Pound</span>
+                            </a>
+                            <a href="#">
+                                <p>HKD HK$ </p>
+                                <span>Hong Kong Dollar</span>
+                            </a>
+                            <a href="#">
+                                <p>MYR </p>
+                                <span>Malaysian Ringgit</span>
+                            </a>
+                            <a href="#">
+                                <p>ISK kr </p>
+                                <span>Icelandic Krona</span>
+                            </a>
+                            <a href="#">
+                                <p>JPY ¥ </p>
+                                <span>Japanese Yen</span>
+                            </a>
+                            <a href="#">
+                                <p>KRW ₩ </p>
+                                <span>South Korean Won</span>
+                            </a>
+                            <a href="#">
+                                <p>LBP </p>
+                                <span>Lebanese Pound</span>
+                            </a>
+                            <a href="#">
+                                <p>MOP 毫 </p>
+                                <span>Macanese Pataca</span>
+                            </a>
+                            <a href="#">
+                                <p>MXN </p>
+                                <span>Mexican Peso</span>
+                            </a>
+                            <a href="#">
+                                <p>NZD NZ$ </p>
+                                <span>New Zealand Dollar</span>
+                            </a>
+                            <a href="#">
+                                <p>PLN zł </p>
+                                <span>Polish Zloty</span>
+                            </a>
+                            <a href="#">
+                                <p>QAR ر.ق </p>
+                                <span>Qatari Riyal</span>
+                            </a>
+                            <a href="#">
+                                <p>SAR </p>
+                                <span>Saudi Arabian Riyal</span>
+                            </a>
+                            <a href="#">
+                                <p>SEK </p>
+                                <span>Swedish Krona</span>
+                            </a>
+                            <a href="#">
+                                <p>TWD NT$ </p>
+                                <span>Taiwan New Dollar</span>
+                            </a>
+                            <a href="#">
+                                <p>THB ฿ </p>
+                                <span>Thai Baht</span>
+                            </a>
+                            <a href="#">
+                                <p>VND ₫ </p>
+                                <span>Viet Nam Dong</span>
+                            </a>
+                            <a href="#">
+                                <p>ZAR </p>
+                                <span>South African Rand</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="for_media_black"></div>
+    <div class="for_media_navbar for_perevods">
+        <div class="for_center_div"></div>
+        <div class="first_section">
+        <div class="for_selects">
+            <h3 onclick="selects_media(0)" class="media_first media_active">Language</h3>
+            <h3 onclick="selects_media(1)" class="media_second">Currency</h3>
+        </div>
+        <span onclick="exits_menu()" class="icons1"><i class='bx bx-x'></i></span>
+    </div>
+    <div class="languageses for_perevods1">
+        <a data-lang="english"><div onclick="select_lang(0)"  class="for_flexes_lang">
+            <h4 class="langs_colors langs_color1 lang_color_active">English</h4>
+            <div class="for_circle for_circle1 circle_active">
+                <div class="in_for_circle in_for_circle1 in_circle_active"></div>
+            </div>
+        </div></a>
+        <!-- <div onclick="select_lang(1)" class="for_flexes_lang">
+            <h4 class="langs_colors langs_color2">Spanish</h4>
+            <div class="for_circle for_circle2">
+                <div class="in_for_circle in_for_circle2"></div>
+            </div>
+        </div>
+        <div onclick="select_lang(2)" class="for_flexes_lang">
+            <h4 class="langs_colors langs_color3">French</h4>
+            <div class="for_circle for_circle3">
+                <div class="in_for_circle in_for_circle3"></div>
+            </div>
+        </div>
+        <div onclick="select_lang(3)" class="for_flexes_lang">
+            <h4 class="langs_colors langs_color4">Italian</h4>
+            <div class="for_circle for_circle4">
+                <div class="in_for_circle in_for_circle4"></div>
+            </div>
+        </div>
+        <div onclick="select_lang(4)" class="for_flexes_lang">
+            <h4 class="langs_colors langs_color5">German</h4>
+            <div class="for_circle for_circle5">
+                <div class="in_for_circle in_for_circle5"></div>
+            </div>
+        </div>
+        <div onclick="select_lang(5)" class="for_flexes_lang">
+            <h4 class="langs_colors langs_color6">portuguese</h4>
+            <div class="for_circle for_circle6">
+                <div class="in_for_circle in_for_circle6"></div>
+            </div>
+        </div>
+        <div onclick="select_lang(6)" class="for_flexes_lang">
+            <h4 class="langs_colors langs_color7">Dutch</h4>
+            <div class="for_circle for_circle7">
+                <div class="in_for_circle in_for_circle7"></div>
+            </div>
+        </div> -->
+        <a data-lang="indonesian"><div onclick="select_lang(7)" class="for_flexes_lang">
+            <h4 class="langs_colors langs_color8">Malaysian</h4>
+            <div class="for_circle for_circle8">
+                <div class="in_for_circle in_for_circle8"></div>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="valyutas for_valyutas1">
+        <a data-lang="USD"><div onclick="select_lang(8)"  class="for_flexes_lang">
+            <h4 class="langs_colors langs_color9 lang_color_active">$ &#x2022; United States Dollar</h4>
+            <div class="for_circle for_circle9 circle_active">
+                <div class="in_for_circle in_for_circle9 in_circle_active"></div>
+            </div>
+        </div></a>
+        <a data-lang="IDR"><div onclick="select_lang(9)"  class="for_flexes_lang">
+            <h4 class="langs_colors langs_color10">MYR &#x2022; Malaysian Ringgit</h4>
+            <div class="for_circle for_circle10">
+                <div class="in_for_circle in_for_circle10"></div>
+            </div>
+        </div></a>
+    </div>
+    </div>  
+        </div>
+
+        <div class="index_container2">
+            <div class="ind_header">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="https://cdn-imgix.headout.com/media/images/b1d42a4875c80e63a2192f4ad50822d1-Lost%20World%20of%20Tambun%202.jpg?auto=format&w=1080&h=360&q=90&fit=crop&ar=3%3A1&exp=-10"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://cdn-imgix.headout.com/media/images/5b5d4458f98a10139a5e98d0fe8f15b3-21526-barcelona-combo--montjuic-cable-car---aquarium-barcelona-07.jpg?auto=format&w=1080&h=360&q=90&fit=crop&ar=3%3A1&exp=-10"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://cdn-imgix.headout.com/microbrands-content-image/image/59095e6068fe147ee68d0f000191c705-Malaysia%20Attractions%2C%20Activities%20%26%20Tours.jpg?auto=format&w=1080&h=360&q=90&fit=crop&ar=3%3A1&exp=-10"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://cdn-imgix.headout.com/microbrands-content-image/image/3400d14c5a796aa1e19a698b10955199-Nickelodeon%20Lost%20Lagoon.jpg?auto=format&w=1080&h=360&q=90&fit=crop&ar=3%3A1&exp=-10"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://cdn-imgix.headout.com/mircobrands-content/image/3205248e18acdb502437f21182441c21-Dubai%20LEGOLAND%20Water%20Park%20tickets%20-%20Build-A-Raft-River.jpeg?auto=format&w=1080&h=360&q=90&fit=crop&ar=3%3A1&exp=-10"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="ind_main">
+                <div class="ind_main_top">
+                    <div class="ind_main_top_h1">
+                        <h1><strong data-translate="home_title_1">Top Attractions In Malaysia</strong></h1>
+                    </div>
+                    <div class="ind_main_top_card">
+                        <a href="./pages/SunwayLagoon.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/microbrands-content-image/image/355113fd00eab3e6330adcf6bb19a2d1-Sunway%20Lagoon%20Theme%20Park%20Tickets.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_1">Sunway Lagoon Theme Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_1_price_skidka">$35.04</strong></span>
+                                        <span><strong data-translate="home_ticket_1_price">$32.92</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookKLTowerTickets.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/mircobrands-content/image/1a967614312dab68db9baf0bb98381e7-kl%20tower%20-%20Tower%20Facade%20Lightings.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_2">Menara Kuala Lumpur Tower Tickets (KL Tower)</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_2_price_skidka">$30</strong></span>
+                                        <span><strong data-translate="home_ticket_2_price">$20</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookAquaria.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/5b5d4458f98a10139a5e98d0fe8f15b3-21526-barcelona-combo--montjuic-cable-car---aquarium-barcelona-07.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_3">Aquaria KLCC</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_3_price_skidka">$52</strong></span>
+                                        <span><strong data-translate="home_ticket_3_price">$45</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookGamuda.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/cda22210be2e36eaa9fccad7bd78d61f-19617-selangor-paya-indah-discovery-wetlands-at-gamuda-cove-02.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_4">Gamuda Cove</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_4_price">$20</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ./pages/BookPetronas.html -->
+                        <a href="./pages/PetronasTwin.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/d633525b577e424f4b57ff92c09c4049-PetronasTwinTower-KualaLumpur.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_5">petronas twin towers</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_5_price">$35</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/GentingSkyWorlds.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/31747/TOUR-IMAGE/c159e615-6444-487d-97ab-2e427282a11c-16806-kuala-lumpur-genting-skyworld-outdoor-theme-park-1.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_6">Genting Skyworlds Theme Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_6_price_skidka">$46.62</strong></span>
+                                        <span><strong data-translate="home_ticket_6_price">$26.82</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookAFamosa.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/31762/TOUR-IMAGE/b5ddffa5-39fd-46bf-865c-8041983bfc85-16813-malaka-a-famosa-malacca-05.png?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_7">A'famosa Water Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_7_price_skidka">$16.60</strong></span>
+                                        <span><strong data-translate="home_ticket_7_price">$10.22</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookTheTOP.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/29853/TOUR-IMAGE/7a32d098-00d5-4641-8323-b75f1a5558b8-15990-penang-the-top-penang-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_8">The Top Penang</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_8_price_skidka">$16.60</strong></span>
+                                        <span><strong data-translate="home_ticket_8_price">$14.26</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookGentingHighlands.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/6cfddeeaa5a36d89efb5a1e5e8c6fd28-1.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_9">Genting Highlands</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_9_price">$2.13</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BuyWetWorld.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/microbrands-content-image/image/82e36edcab86012d1fd50a006f38fed7-Aquafan%20Waterpark%20Tickets.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_10">Wet World Water Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_10_price_skidka">$8.30</strong></span>
+                                        <span><strong data-translate="home_ticket_10_price">$7.45</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookSkytropolis.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/80eab7e0d505d0481a954302ec698fd2-Valentine's%20Day%20Orlando%20-%20Visit%20a%20Theme%20Park.jpeg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_11">Genting Skytropolis Theme Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_11_price_skidka">$15.96</strong></span>
+                                        <span><strong data-translate="home_ticket_11_price">$13.84</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookLostWorldofTambun.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/b1d42a4875c80e63a2192f4ad50822d1-Lost%20World%20of%20Tambun%202.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_12">Lost World of Tambun Amusement Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_12_price_skidka">$28.74</strong></span>
+                                        <span><strong data-translate="home_ticket_12_price">$19.16</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BooktheBestGuided.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/2114f7893c0f827dccd3ddea1e0f754c-22245-sabah-combo---mari-mari-cultural-village---hotel-transfer---lunch---upside-down-house-03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_13">Mari Mari Cultural Village</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_13_price_skidka">$28.74</strong></span>
+                                        <span><strong data-translate="home_ticket_13_price">$27.67</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/AtmosphereTickets.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/tour/37157/TOUR-IMAGE/572f48d6-ef5a-46fe-a828-d844172766f3-19081-kuala-lumpur-atmosphere-360-revolving-restaurant---hi-tea-buffet-03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_14">atmosphere 360</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_14_price">$18.94</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookCableCar.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/collection-hero-image/3841/image/b986f78200dcbf8673e0900b94e58077-Broadway-9.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_15">Genting Awana SkyWay</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_15_price">$2.13</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookLangkawi.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/db80f2f6a811e8c9f29847dfc56f2ad3-21226-Langkawi-4-in-1LangkawiSkyCabCableCarTicketswithVIP-GlassBottomGondolaOptions-12.jpeg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_16">Langkawi SkyCab Cable Car</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_16_price_skidka">$9.15</strong></span>
+                                        <span><strong data-translate="home_ticket_16_price">$8.51</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BuyBatu.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/3f4ac55cf4084c309ca5085f627f2c2d-Top%20Attractions%20In%20Malaysia%20batu.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_17">Batu Caves</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_17_price_skidka">$12.77</strong></span>
+                                        <span><strong data-translate="home_ticket_17_price">$9.58</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/UpsideDown.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/5d58b7e13357a920e8371d3b4c679712-20258-amsterdam-tickets-to-upside-down-museum-and-amaze-amsterdam-13.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_18">Upside Down House</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_18_price_skidka">$3.83</strong></span>
+                                        <span><strong data-translate="home_ticket_18_price">$3.19</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/mircobrands-content/image/8fee5d0713fdd3c7cbfb325956b5cbf3-keith-chan-0k49x3_9oSY-unsplash.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_19">The Habitat Penang Hill</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_19_price_skidka">$5.32</strong></span>
+                                        <span><strong data-translate="home_ticket_19_price">$5.11</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookKualaSelangor.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/ccd78bd7a3e3dd8444e765ddfc117e11-Kuala%20Selangor%20Fireflies.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_20">Fireflies in Kuala Selangor</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_20_price">$8.51</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookSkyMirror.html">
+                            <div class="ind_main_top_cards">
+                                <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/tour/34039/TOUR-IMAGE/dff8c6ba-b58b-42df-ba6e-98f046975548-17846-selangor-sky-mirror-experience-in-kuala-selangor-03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_21">Sky Mirror</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_21_price">$16.82</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookTaming.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/345347aff4a8e05e748ee766828a55d1-22571-melaka-combo--save-4-----menara-taming-sari---melaka-wonderland-06.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_22">Taming Sari Melaka</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_22_price_skidka">$5.32</strong></span>
+                                        <span><strong data-translate="home_ticket_22_price">$3.62</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookShore.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/db1db876af8bcee49a4be70df154b913-The%20Shore%20Sky%20Tower.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_23">The Shore Sky Tower</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_23_price">$5.32</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/GetDeals.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/tour/34452/TOUR-IMAGE/d9b31abe-abb2-4cf0-ad74-ad8b888fd933-18034-kuala-lumpur-kuala-lumpur-half-day-city-tour-04.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_24">KL City Tours</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_24_price">$32.99</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookTicketsforBlue.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/tour/34043/TOUR-IMAGE/962b7050-591e-4a2c-9be9-b6b1d9cecb7e-17850-selangor-blue-tears-experience-in-kuala-selangor--01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_25">Blue Tears Tour in Kuala Selangor</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_25_price">$10.64</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookColmarTropicale.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/aa10abf0e6167ab03884b641f742ed0f-Colmar%20Tropicale.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_26">Colmar Tropicale</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_26_price">$31.93</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/GetDealsonLangkawi.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/media/images/19f5f697c91f8a04c9d4d9ad335791ce-21226-langkawi-4in1-glass-bottom-gondola---express-lane--03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_27">Langkawi Tours</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_27_price">$25.54</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookEagles.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/tour/34040/TOUR-IMAGE/61454a31-c3ec-45d5-b0ab-92fab4629d4c-17847-selangor-eagles-feeding-experience-in-kuala-selangor-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_28">Eagle-feeding Kuala Selangor</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_28_price">$8.51</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookPetrosains.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/5e178e5232fcc23461e6f7c89c6454f7-5172-kuala-lumpur-petrosains-discovery-centre-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_29">Petrosains, The Discovery Centre</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_29_price">$5.32</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="ind_main_top_endP"><span data-translate="home_title_2">Find out all the top attractions and the</span> <a href="#" data-translate="home_title_3">best theme parks in Malaysia</a>.</p>
+                </div>
+        
+                <div class="ind_main_top">
+                    <div class="ind_main_top_h1">
+                        <h1><strong data-translate="home_title_4">Nature & Wildlife in Malaysia</strong></h1>
+                    </div>
+                    <div class="ind_main_top_card">
+                        <a href="./pages/ZooNegara.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/26428/TOUR-IMAGE/b2cb62b0-2de5-4fe3-bf59-cce3c8ce9df1-13888-kuala-lumpur-zoo-negara-malaysia-family-bundle-03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_30">Zoo Negara</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_30_price_skidka">$5.32</strong></span>
+                                        <span><strong data-translate="home_ticket_30_price">$5.32</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookKLBird.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/765bf0929825901bbcdbed777a2603fa-Kuala%20Lumpur%20Bird%20Park.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_31">KL Bird Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_31_price">$18.09</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookMelaka.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/35065/TOUR-IMAGE/a902e35b-211a-46e4-b456-147db2e99f0a-18334-melaka-zoo-melaka-tickets-05.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_32">Melaka Zoo</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_32_price">$9.58</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookKLTower.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34712/TOUR-IMAGE/dcefc1a5-1a10-4846-9818-900be7eaef66-18173-kuala-lumpur-kuala-lumpur-tower-mini-zoo-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_33">KL Tower Mini Zoo</strong></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookCrocodile.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/25449/TOUR-IMAGE/7dafff55-3605-45ad-8e9b-eafb8e017f8c-13239-kuala-lampur-crocodile-adventureland-langkawi---croc-encounter-combo-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_34">Crocodile Adventureland Langkawi</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_34_price_skidka">$8.51</strong></span>
+                                        <span><strong data-translate="home_ticket_34_price">$7.66</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/CityMalaysia.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34748/TOUR-IMAGE/51d73aa0-8721-47d0-aef7-f90c1ed5af80-18189-selangor-farm-in-the-city-02.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_35">Farm in the City</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_35_price_skidka">$8.30</strong></span>
+                                        <span><strong data-translate="home_ticket_35_price">$7.88</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/bentong-farm.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/31075/TOUR-IMAGE/b49fc34f-5d00-48a1-bef0-03005b024bdd-38d80e79-29dc-4332-a3be-64bafac7d8b4.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_36">Bentong Farm</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_36_price">$10.22</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BuyLangkawi.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/dd663ea485df60937c0bb29628c8d221-%20Langkawi%20Underwater%20World.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_37">Langkawi Underwater World</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_37_price_skidka">$10.64</strong></span>
+                                        <span><strong data-translate="home_ticket_37_price">$9.58</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookEntopia.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/23852/TOUR-IMAGE/c24b9c52-3d2a-44e0-811f-abbdbec027d0-12433-kuala-lumpur-entopia-by-penang-butterfly-farm-05.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_38">Entopia by Penang Butterfly Farm</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_38_price_skidka">$13.84</strong></span>
+                                        <span><strong data-translate="home_ticket_38_price">$12.45</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookTaman.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/mircobrands-banner/image/d06a97abf966a5e898609f4d8fc39660-Taman%20Buaya%20%26%20Rekreasi%20Melaka%20Tickets%20banner%202.jpeg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_39">Taman Buaya & Rekreasi Melaka</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_39_price">$3.41</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+        
+                    </div>
+                </div>
+        
+                <div class="ind_main_top">
+                    <div class="ind_main_top_h1">
+                        <h1><strong data-translate="home_title_5">Best Theme Parks & Water Parks in Malaysia</strong></h1>
+                    </div>
+                    <div class="ind_main_top_card">
+                        <a href="./pages/BookBerjaya.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34524/TOUR-IMAGE/c7396ff6-5cac-4a1b-b039-59fad13ea7ce-18068-kuala-lumpur-berjaya-times-square-theme-park-02.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_40">Berjaya Times Square Theme Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_40_price_skidka">$12.77</strong></span>
+                                        <span><strong data-translate="home_ticket_40_price">$12.13</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BuyLegoland.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/microbrands-content-image/image/731c9e28067bbbb3fa0a069d2540c900-Nearby.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_41">LEGOLAND Malaysia</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_41_price_skidka">$53</strong></span>
+                                        <span><strong data-translate="home_ticket_41_price">$42.57</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookBayou.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/33985/TOUR-IMAGE/73852473-daf9-4638-9f82-0cc1ce1d3e3a-17809-melaka-bayou-lagoon-water-park--07.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_42">Bayou Lagoon Water Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_42_price_skidka">$6.17</strong></span>
+                                        <span><strong data-translate="home_ticket_42_price">$4.04</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/Book99.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/36865/TOUR-IMAGE/a93c6803-6780-44c4-a885-0c4018698282-18982-selangor-99-wonderland-park-weekends-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_43">99 Wonderland Park</strong></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookKidzania.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/microbrands-banner-image/image/777881d8254a614859def99e5138b41e-d83450bd-b308-46c4-a1e8-bd5cd0780d6a-15974-kuala-lumpur-kidzania-kuala-lumpur---admission-tickets-02.jpeg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_44">KidZania Kuala Lumpur Tickets</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_44_price_skidka">$6.17</strong></span>
+                                        <span><strong data-translate="home_ticket_44_price">$14.77</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookVR.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/mircobrands-content/image/bffc385e5fe4317cdf3d20d02f1f3610-HeadRock%20VR%20Singapore.jpeg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_45">VR Universal</strong></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookEscapeTheme.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/23838/TOUR-IMAGE/929b0803-d673-4f93-853f-f32695cf7f96-12428-kuala-lumpur-escape-theme-park-tickets-07.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_46">Escape Theme Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_46_price">$40.02</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookDesaru.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/mircobrands-content/image/5740b8e1597d0825369efc672b8bc15b-Adventure%20Cove%20Waterpark.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_47">Desaru Coast Adventure Waterpark</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_47_price_skidka">$19.16</strong></span>
+                                        <span><strong data-translate="home_ticket_47_price">$15.54</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookBukit.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/36652/TOUR-IMAGE/07109416-c04f-4871-9873-e58c33a183f3-18909-perak-bukit-merah-laketown-waterpark-04.JPG?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_48">Bukit Merah Water Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_48_price_skidka">$8.51</strong></span>
+                                        <span><strong data-translate="home_ticket_48_price">$5.75</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookEhsan.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/microbrands-content-image/image/07dc06d3d55036be28851e8880d9e291-Wild%20Wadi%20Homepage%20Aquaventure%20Waterpark.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_49">Ehsan Waterpark</strong></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookWaterworld.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/mircobrands-content/image/a68ccac279ba7457adb3dacacbb465f5-claire-satera-0lk4hww7pdo-unsplash.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_50">I-City Theme Park</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_50_price_skidka">$16.82</strong></span>
+                                        <span><strong data-translate="home_ticket_50_price">$13.41</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookSplash.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img  src="https://cdn-imgix.headout.com/tour/31722/TOUR-IMAGE/c18aa919-c349-4a07-90b0-d6ee1595f2c8-16787-langkawi-splash-out-langkawi-water-theme-park-06.png?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_51">Splash Out Langkawi</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_51_price_skidka">$17.03</strong></span>
+                                        <span><strong data-translate="home_ticket_51_price">$5.32</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="ind_main_top">
+                    <div class="ind_main_top_h1">
+                        <h1><strong data-translate="home_title_6">Museums in Malaysia</strong></h1>
+                    </div>
+                    <div class="ind_main_top_card">
+                        <a href="./pages/BookWonderfood.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/23860/TOUR-IMAGE/c8e5598e-09f6-48fb-9d9c-072aca445b19-12438-kuala-lumpur-wonderfood-museum-04.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_52">Wonderfood Museum</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_52_price_skidka">$4.26</strong></span>
+                                        <span><strong data-translate="home_ticket_52_price">$3.83</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookIllusion.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/36140/TOUR-IMAGE/35da3f4c-8905-4804-828b-4d9503d685c8-18766-kuala-lumpur-illusion-3d-art-museum-kuala-lumpur-07.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_53">Illusion 3D Art Museum</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_53_price_skidka">$7.24</strong></span>
+                                        <span><strong data-translate="home_ticket_53_price">$6.81</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/Penang3D.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/25423/TOUR-IMAGE/b8271b87-d304-4609-9126-cc366dfea789-13223-kuala-lampur-penang-3d-trick-art-museum-02.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_54">Penang 3D Trick Art Museum</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_54_price_skidka">$3.83</strong></span>
+                                        <span><strong data-translate="home_ticket_54_price">$3.62</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookDark.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/23854/TOUR-IMAGE/f60e73e7-4358-4a95-84b1-c3ce1d55a687-12434-kuala-lumpur-dark-mansion-museum-03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_55">Dark Mansion Museum</strong></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookTechDome.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/31688/TOUR-IMAGE/885c3dc2-97a7-4f5c-8085-a0fc2cab78b9-TechDomePenang3.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_56">Tech Dome Penang</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_56_price_skidka">$5.96</strong></span>
+                                        <span><strong data-translate="home_ticket_56_price">$5.53</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookGhost.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34870/TOUR-IMAGE/978bb601-7d9f-474f-8654-5be99d043f5f-18245-melaka-ghost-museum-melaka-03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_57">Ghost Museum Melaka</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_57_price">$5.53</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookRipleys.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/29845/TOUR-IMAGE/3b57e1e1-8fcd-4015-8bcb-9ece4a6d459f-15987-kuala-lumpur-ripley-s-adventureland-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_58">Ripley's Adventureland</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_58_price_skidka">$8.30</strong></span>
+                                        <span><strong data-translate="home_ticket_58_price">$6.60</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookGhostMuseum.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34868/TOUR-IMAGE/2a7d167a-fc3a-4f6a-8612-56e2b7265073-18244-penang-ghost-museum-penang-01.JPG?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_59">Ghost Museum Penang</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span class="strike_price"><strong data-translate="home_ticket_59_price_skidka">$7.02</strong></span>
+                                        <span><strong data-translate="home_ticket_59_price">$6.39</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="ind_main_top">
+                    <div class="ind_main_top_h1">
+                        <h1><strong data-translate="home_title_7">Popular Activities in Malaysia</strong></h1>
+                    </div>
+                    <div class="ind_main_top_card">
+                        <a href="./pages/BookRafting.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/microbrands-banner-image/image/5fd0a9b32dd20f38ce74516b68806193-White%20Water%20Rafting%20Tour%20in%20Sabah%201.jpg?auto=format&w=705.6&h=360&q=90&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_60">Kiulu White Water Rafting</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_60_price">$22.35</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookXtreme.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34422/TOUR-IMAGE/238464a0-6dbe-4bc8-b004-26aec8ec13f9-18022-langkawi-langkawi-adventure---xtreme-park-04.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_61">xtreme park langkawi</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_61_price">$18.09</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookJump.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/869612033f11192fe20aec4bdff6528f-Genting%20highlands.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_62">Jump Street Asia</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_62_price">$9.58</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BuyATVLangkawi.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34605/TOUR-IMAGE/6a0800b9-bad2-43c5-ab72-1ffb65cd6c61-18121-langkawi-atv-adventure-in-langkawi-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_63">ATV Langkawi</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_63_price">$31.72</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookHopping.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/34484/TOUR-IMAGE/fae7267e-e25c-497c-8efd-d84dba2edebb-18049-langkawi-langkawi-island-hopping-01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_64">Langkawi Island Hopping</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_64_price">$8.51</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="ind_main_top">
+                    <div class="ind_main_top_h1">
+                        <h1><strong data-translate="home_title_8">Malaysia Cruises</strong></h1>
+                    </div>
+                    <div class="ind_main_top_card">
+                        <a href="./pages/BookDickson.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/36650/TOUR-IMAGE/d002b4f4-de25-4700-8a29-cf1c48fca213-18907-kuala-lumpur-dickson-dragon-cruise-port-dickson--01.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_65">Dickson Dragon Cruise</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_65_price">$18.73</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./pages/BookPutrajaya.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/b170b8d46cc33bc8441d050929ac3b36-Top%20Attractions%20In%20Malaysia.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_66">Putrajaya Tour & Cruise</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_66_price">$38.74</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="ind_main_top">
+                    <div class="ind_main_top_h1">
+                        <h1><strong data-translate="home_title_9">Transportation Services</strong></h1>
+                    </div>
+                    <div class="ind_main_top_card">
+                        <a href="./pages/BookKlia.html">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/9b66521e9b2d8abf6ff6eac1dcef365a-17429-kuala-lumpur-klia-ekspres-airport-train--qr-code-direct-entry--111.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_67">KLIA Express Tickets</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_67_price">$10.52</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/media/images/f8e53833aa6907497009a8e4a0fb5a8a-21127-langkawi-langkawi-ferry-tickets-05.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_68">Langkawi Ferry Tickets & Transfers</strong></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="ind_main_top_cards">
+                                                       <div class="for_img_card">
+                                    <div class="for_img_card2">
+                                        <img src="https://cdn-imgix.headout.com/tour/32968/TOUR-IMAGE/3a66f86e-7b9c-4016-8bad-e24e4cb069fa-17429-kuala-lumpur-klia-ekspres-airport-train--qr-code-direct-entry--03.jpg?auto=format&w=720&h=360&q=90&ar=16%3A10&crop=faces" alt="">
+                                    </div>
+                                </div>
+                                <div class="ind_main_top_cards_p">
+                                    <h3><strong data-translate="ticket_69">Malaysia Airport Transfers</strong></h3>
+                                    <div class="ind_main_top_cards_price">
+                                        <span><strong data-translate="home_ticket_69_price">$16.18</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <footer>
+            <div class="style__LinkSlicesWrapper-sc-jl6mez-5 bMkAHE">
+                <div class="LinkSlices__FooterLinksWrapper-sc-7qo8ej-0 iClena secondary-footer">
+                    <div class="style__Container-sc-jl6mez-2 jeUZUg">
+                        <div class="quick-links-title has-custom-title"><strong>Top Things to do in Malaysia</strong></div>
+                        <div class="quick-links">
+                            <div class="slice-wrapper slice-block footer_column">
+                            <div class="FooterLinksSection__FooterLinksSectionWrapper-sc-k7kklg-0 hHkJOd">
+                                <div class="FooterLinksSection__Title-sc-k7kklg-1 ioZsiz"><strong>Attractions:</strong></div>
+                                <a href="#" class="link-item">Aquaria KLCC</a>
+                                <a href="#" class="link-item">Genting Awana SkyWay</a>
+                                <a href="#" class="link-item">KL Tower</a>
+                                <a href="#" class="link-item">Petronas Twin Towers</a>
+                                <a href="#" class="link-item">Entopia Penang</a>
+                                <a href="#" class="link-item">Langkawi Underwater World</a>
+                                <a href="#" class="link-item">3D Trick Art Museum</a>
+                                <a href="#" class="link-item">The Habitat Penang Hill</a>
+                                <a href="#" class="link-item">Dark Mansion Museum</a>
+                                <a href="#" class="link-item">Wonderfood Museum</a>
+                                <a href="#" class="link-item">Langkawi SkyCab Cable Car</a>
+                                <a href="#" class="link-item">Atmosphere 360</a>
+                                <a href="#" class="link-item">ATV Langkawi</a>
+                                <a href="#" class="link-item">Batu Caves</a>
+                                <a href="#" class="link-item">Upside Down House</a>
+                                <a href="#" class="link-item">Zoo Melaka</a>
+                                <a href="#" class="link-item">Sunway Lagoon Theme Park</a>
+                                <a href="#" class="link-item">LEGOLAND Malaysia</a>
+                                <a href="#" class="link-item">Escape Theme Park</a>
+                                <a href="#" class="link-item">Lost World of Tambun</a>
+                                <a href="#" class="link-item">Crocodile Adventureland Langkawi</a>
+                                <a href="#" class="link-item">KidZania Kuala Lumpur</a>
+                                <a href="#" class="link-item">Ripley's Adventureland</a>
+                                <a href="#" class="link-item">Desaru Coast Adventure Waterpark</a>
+                                <a href="#" class="link-item">KL Tower Mini Zoo</a>
+                                <a href="#" class="link-item">Genting Skyworlds Theme Park</a>
+                                <a href="#" class="link-item">Genting Skytropolis Theme Park</a>
+                                <a href="#" class="link-item">Afamosa Water Park</a>
+                                <a href="#" class="link-item">Bayou Lagoon Water Park</a>
+                                <a href="#" class="link-item">Bentong Farm</a>
+                                <a href="#" class="link-item">Berjaya Times Square Theme Park</a>
+                                <a href="#" class="link-item">Farm in the City</a>
+                                <a href="#" class="link-item">Jump Street Asia</a>
+                                <a href="#" class="link-item">KL Bird Park</a>
+                                <a href="#" class="link-item">VR Universal Langkawi</a>
+                                <a href="#" class="link-item">The Shore Sky Tower</a>
+                                <a href="#" class="link-item">i-City Shah Alam Theme Park</a>
+                                <a href="#" class="link-item">Tech Dome Penang</a>
+                                <a href="#" class="link-item">Taman Buaya &amp; Rekreasi Melaka</a>
+                                <a href="#" class="link-item">Wet World Water Park</a>
+                                <a href="#" class="link-item">Putrajaya Tour &amp; Cruise</a>
+                                <a href="#" class="link-item">Sky Mirror Kuala Selangor</a>
+                                <a href="#" class="link-item">Splash Out Langkawi</a>
+                                <a href="#" class="link-item">The Top Penang</a>
+                                <a href="#" class="link-item">Zoo Negara</a>
+                            </div
+                            ></div>
+                            <div class="slice-wrapper slice-block footer_column">
+                                <div class="FooterLinksSection__FooterLinksSectionWrapper-sc-k7kklg-0 hHkJOd">
+                                    <div class="FooterLinksSection__Title-sc-k7kklg-1 ioZsiz"><strong>Transportation Services:</strong></div>
+                                    <a href="#" class="link-item">Malaysia Airport Transfers</a>
+                                    <a href="#" class="link-item">Langkawi Ferry Tickets</a>
+                                    <a href="#" class="link-item">KLIA Express</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="style__Container-sc-jl6mez-2 jeUZUg"></div>
+            </div>
+        </footer> -->
+        <div class="style__FooterLegalWrapper-sc-jl6mez-1 gGvPif"><div class="style__Container-sc-jl6mez-2 jeUZUg">
+            <div class="style__FooterLegal-sc-jl6mez-7 bydXXs">
+                <div class="logo-disclaimer"><div class="logo-wrapper">
+                    <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                        <img data-card-section="Image" alt="Malaysia Tickets" fetchpriority="auto" src="https://cdn-imgix.headout.com/media/images/8e5e52883bb7069c70927a2aa45ac332-Malaysia.svg?auto=format&amp;w=172.79999999999998&amp;h=52.8&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.15 40">
+                        <defs><style>.cls-1{fill:#8000ff}</style></defs>
+                        <g>
+                            <path d="M.25 0v40" style="fill:none;stroke:#888;stroke-width:.5px"></path>
+                            <path class="cls-1" d="M14.75 24.8c1.3-1.1 3.2-1.9 5.2-1.9s3.5.8 3.5 3.8v10.1h-2.7v-9.5c0-1.7-.7-2.2-2.1-2.2-1.5 0-2.9.7-4 1.4v10.3h-2.7V18.5h1.5c1 0 1.2.2 1.2 1.8l.1 4.5ZM28.25 30.4c.1 3.2 1.6 4.5 4.2 4.5 1.8 0 3-.6 3.8-1.2h.9v1.8c-1 .7-2.5 1.4-5 1.4-4.2 0-6.5-2.7-6.5-6.9s2.7-7.1 6.2-7.1 5.7 2.1 5.7 6.6v.9h-9.3Zm.1-1.7h6.5c0-3-1.2-4-3.1-4-1.8 0-3.1 1.1-3.4 4ZM47.25 35.2c-1 1.1-2.2 1.7-4.1 1.7-2.5 0-4.3-1.4-4.3-4.1s2.2-4.2 5.3-4.2c1.2 0 2 .1 3 .4v-1.8c0-1.6-.9-2.3-2.7-2.3-1.6 0-2.9.5-3.7 1.1h-.8v-2c1.2-.6 2.7-1.2 4.9-1.2 3.2 0 5.1 1.2 5.1 4.2v9.7h-1c-1.2 0-1.5-.3-1.7-1.5Zm-.1-1.7v-2.9c-.7-.1-1.6-.3-2.5-.3-1.8 0-3.1.7-3.1 2.3 0 1.7 1.1 2.4 2.5 2.4 1.4.1 2.3-.6 3.1-1.5ZM61.55 34.9c-.9 1.1-2.4 2-4.3 2-2.8 0-5.3-2-5.3-6.8 0-5.4 2.9-7.2 5.6-7.2 1.9 0 3 .6 3.9 1.4v-5.8h1.5c1 0 1.2.3 1.2 1.8v16.5h-1.8c-.5-.1-.7-.4-.8-1.9Zm0-1.8v-6.9c-.8-.7-1.7-1.2-3.1-1.2-1.8 0-3.7 1-3.7 5 0 3.7 1.4 5 3.2 5 1.5-.1 2.6-.8 3.6-1.9ZM66.35 29.9c0-4.4 2.8-7.1 6.5-7.1s6.5 2.7 6.5 7.1-2.8 6.9-6.5 6.9-6.5-2.5-6.5-6.9Zm10.3 0c0-3.3-1.5-5.1-3.8-5.1s-3.8 1.8-3.8 5.1 1.5 4.9 3.8 4.9c2.4.1 3.8-1.6 3.8-4.9ZM90.25 33.5V23.1h2.6v13.7h-1.7c-.6 0-.9-.2-1-1.5-1.3 1-3.1 1.7-4.9 1.7-2.1 0-3.7-.9-3.7-3.6V23.1h2.7v9.6c0 1.8.9 2.2 2.1 2.2 1.4-.1 2.8-.7 3.9-1.4ZM94.75 23h1.6v-3.7h1.6c.8 0 1.1.3 1.1 1.5V23h3v1.9h-3v8c0 1.5.6 1.9 1.9 1.9h1.2v1.7c-.5.1-1.2.3-2.2.3-2.3 0-3.7-1-3.7-3.5v-8.4h-1.6l.1-1.9Z"></path>
+                            <path d="M13.15 1.1h1.2v5.3c.3-.4.7-.7 1.1-.9.4-.2.9-.3 1.4-.3s1 .1 1.5.3c.5.2.8.4 1.2.8.3.3.6.7.7 1.2.2.4.3.9.3 1.4s-.1 1-.3 1.4-.4.8-.7 1.2c-.3.3-.7.6-1.1.8-.4.2-.9.3-1.4.3-.6 0-1.2-.1-1.6-.4-.5-.3-.8-.6-1-1v1.2h-1.2V1.1h-.1Zm1.1 7.8c0 .4.1.7.2 1 .1.3.3.6.5.8s.5.4.8.5.6.2 1 .2.7-.1 1-.2c.3-.1.6-.3.8-.5s.4-.5.5-.8.2-.7.2-1-.1-.7-.2-1c-.1-.3-.3-.6-.5-.8-.2-.2-.5-.4-.8-.5s-.6-.2-1-.2-.7.1-1 .2-.5.3-.8.5c-.2.2-.4.5-.5.8-.1.3-.2.6-.2 1Zm10.7 5c-.1.3-.2.6-.4.8-.1.2-.3.5-.4.6-.2.2-.4.3-.6.4-.2.1-.5.1-.9.1h-.5c-.2 0-.3-.1-.5-.1l.1-1c.1 0 .2.1.4.1h.4c.4 0 .6-.1.8-.3s.3-.5.5-.8l.5-1.3-2.9-7h1.3l2.1 5.4 2-5.4h1.3l-3.2 8.5Z" style="fill:#888"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="download hide-mobile">
+                    <div class="style__StoreLinks-sc-jl6mez-9 cnpWaH">
+                        <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                            <img data-card-section="Image" alt="Scan code" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/app_download.svg?auto=format&amp;w=100.8&amp;h=100.8&amp;q=90&amp;crop=faces" width="84" height="84" decoding="async" data-nimg="future" class="" loading="lazy" style="color:transparent">
+                            </div> 
+                            <span  data-translate="footer_1">Download the Headout app</span>
+                        </div>
+                    </div>
+                    <div class="help">
+                        <div class="style__LinksWrapper-sc-jl6mez-4 bCsjZj">
+                            <h2 class="style__FooterHeading-sc-jl6mez-3 ihaahz">
+                                <span><strong  data-translate="footer_2">Get Help 24/7</strong></span>
+                            </h2><ul class="links">
+                                <li class="style__FooterListItem-sc-jl6mez-8 dLbVuI">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5 7.5C10.5 7.76522 10.3946 8.01957 10.2071 8.20711C10.0196 8.39464 9.76522 8.5 9.5 8.5H3.5L1.5 10.5V2.5C1.5 2.23478 1.60536 1.98043 1.79289 1.79289C1.98043 1.60536 2.23478 1.5 2.5 1.5H9.5C9.76522 1.5 10.0196 1.60536 10.2071 1.79289C10.3946 1.98043 10.5 2.23478 10.5 2.5V7.5Z" stroke="#666666" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <a href="#"  data-translate="footer_3" rel="noopener" target="_blank">Chat with Us</a>
+                                </li>
+                                <li class="style__FooterListItem-sc-jl6mez-8 dLbVuI">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_340_6237)">
+                                            <path d="M11.0007 8.46005V9.96005C11.0013 10.0993 10.9727 10.2371 10.917 10.3647C10.8612 10.4923 10.7793 10.6068 10.6767 10.701C10.5741 10.7951 10.453 10.8668 10.3211 10.9114C10.1892 10.956 10.0494 10.9726 9.9107 10.96C8.37212 10.7929 6.8942 10.2671 5.5957 9.42505C4.38761 8.65738 3.36337 7.63313 2.5957 6.42505C1.75069 5.12065 1.22482 3.63555 1.0607 2.09005C1.0482 1.95178 1.06464 1.81243 1.10895 1.68086C1.15326 1.54929 1.22448 1.42839 1.31808 1.32586C1.41168 1.22332 1.5256 1.1414 1.65259 1.08531C1.77959 1.02922 1.91687 1.00018 2.0557 1.00005H3.5557C3.79835 0.99766 4.03359 1.08359 4.21758 1.24181C4.40156 1.40004 4.52174 1.61977 4.5557 1.86005C4.61901 2.34008 4.73642 2.81141 4.9057 3.26505C4.97297 3.44401 4.98753 3.63851 4.94765 3.82549C4.90777 4.01247 4.81513 4.1841 4.6807 4.32005L4.0457 4.95505C4.75748 6.20682 5.79393 7.24327 7.0457 7.95505L7.6807 7.32005C7.81664 7.18562 7.98828 7.09297 8.17526 7.0531C8.36224 7.01322 8.55674 7.02778 8.7357 7.09505C9.18934 7.26432 9.66067 7.38174 10.1407 7.44505C10.3836 7.47931 10.6054 7.60165 10.764 7.7888C10.9225 7.97594 11.0068 8.21484 11.0007 8.46005Z" stroke="#666666" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_340_6237">
+                                                <rect width="12" height="12" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <button data-translate="footer_4" class="toggle_panel_button">Call Us</button>
+                                </li>
+                                <li class="style__FooterListItem-sc-jl6mez-8 dLbVuI">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2H10C10.55 2 11 2.45 11 3V9C11 9.55 10.55 10 10 10H2C1.45 10 1 9.55 1 9V3C1 2.45 1.45 2 2 2Z" stroke="#666666" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11 3L6 6.5L1 3" stroke="#666666" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <a href="#" data-translate="footer_5" rel="noopener" target="_blank">Email Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <div class="style__LinksWrapper-sc-jl6mez-4 bCsjZj">
+                            <h2 class="style__FooterHeading-sc-jl6mez-3 ihaahz">
+                                <span><strong data-translate="footer_6">Headout</strong></span>
+                            </h2><ul class="links">
+                                <li class="style__FooterListItem-sc-jl6mez-8 dLbVuI">
+                                    <a href="#" data-translate="footer_7" rel="noopener" target="_blank">Company Details</a>
+                                </li>
+                                <li class="style__FooterListItem-sc-jl6mez-8 dLbVuI">
+                                    <a href="#" data-translate="footer_8" rel="noopener" target="_blank">Privacy Policy</a>
+                                </li>
+                                <li class="style__FooterListItem-sc-jl6mez-8 dLbVuI">
+                                    <a href="#" data-translate="footer_9" rel="noopener" target="_blank">Terms of Usage</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="payment" style="display: none ;">
+                        <div class="style__LinksWrapper-sc-jl6mez-4 bCsjZj">
+                            <h2 class="style__FooterHeading-sc-jl6mez-3 ihaahz">
+                                <span><strong data-translate="footer_10">We Accept</strong></span>
+                            </h2>
+                            <div class="PaymentMethods__Grid-sc-yyri55-0 dKFFBX">
+                                <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                    <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                        <img data-card-section="Image" alt="VISA" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/Visa.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                    </div>
+                                </div>
+                                <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                    <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                        <img data-card-section="Image" alt="MASTERCARD" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/MasterCard.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                    </div>
+                                </div>
+                                <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                    <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                        <img data-card-section="Image" alt="AMEX" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/AmexCard.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                    </div></div><div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                        <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                            <img data-card-section="Image" alt="PAYPAL" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/PayPalLight.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                        </div>
+                                    </div>
+                                    <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                        <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                            <img data-card-section="Image" alt="MAESTROCARD" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/MaestroCard.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                        </div>
+                                    </div>
+                                    <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                        <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                            <img data-card-section="Image" alt="APPLEPAY" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/ApplePay.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                        </div>
+                                    </div>
+                                    <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                        <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                            <img data-card-section="Image" alt="GPAY" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/GPay.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                        </div>
+                                    </div>
+                                    <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                        <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                            <img data-card-section="Image" alt="DISCOVER" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/DiscoverCard.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                        </div>
+                    </div>
+                            <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                    <img data-card-section="Image" alt="DINERS" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/DinerClub.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                </div>
+                            </div>
+                            <div class="PaymentMethods__GridItem-sc-yyri55-1 jqiVvc">
+                                <div class="Image__Wrapper-sc-u557t3-0 fQxjns image-wrap ">
+                                    <img data-card-section="Image" alt="IDEAL" fetchpriority="auto" src="https://cdn-imgix-open.headout.com/headout-connect/payment-methods/IDealCard.svg?auto=format&amp;q=90&amp;crop=faces" decoding="async" data-nimg="future-fill" class="" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-chin"><div class="white-line"></div>
+        <div class="super-brand-logo">
+            <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.3933 6.53701C26.2828 10.5196 21.0586 12.5051 15.6729 12.5051C11.3943 12.5051 7.18495 11.9361 3.5176 10.299C12.2823 11.2395 20.7703 10.8679 28.3933 6.53701ZM28.3933 4.87663C25.8331 4.1103 23.5266 3.8897 21.1393 3.91292C15.0847 3.95936 8.96096 5.7939 3.5522 8.19739C7.85384 4.35414 14.2544 1.55588 20.6665 1.55588C23.7226 1.55588 27.24 2.86792 28.3933 4.87663ZM29.5696 5.74746C29.5696 1.66038 23.4458 0 19.9515 0C14.4735 0 9.87203 2.00871 5.93944 4.2148C5.69725 3.77358 5.35128 3.69231 4.80925 3.62264C4.00197 3.55298 3.50607 3.51814 2.89484 3.51814C2.22596 3.51814 1.22262 3.56459 0.438411 3.69231C0.0578368 3.76197 -0.0690212 4.06386 0.0347717 4.5283C0.380748 5.7939 0.899713 6.93179 1.58013 8C1.28029 9.04499 1.38408 10.0319 2.24902 10.8447C1.94917 12.0639 1.85691 13.3991 1.90304 14.6067C1.97224 15.106 2.22596 15.2453 2.64113 15.1756C4.18649 14.9318 5.68572 14.3861 6.9889 13.6894C7.31181 13.5152 7.46173 13.3179 7.55399 13.074L11.3713 13.6662C11.9594 14.3048 12.5476 14.8505 13.2626 15.4543C13.7354 15.8026 14.2429 16 14.8656 16C17.645 15.9768 19.9861 15.5588 21.9235 14.8157C22.6847 14.5718 23.2498 13.5501 24.0917 12.1219C25.9599 11.1698 29.5696 9.38171 29.5696 5.74746Z" fill="white"></path>
+            </svg>
+            <span class="address" data-translate="footer_11">© Headout Inc, 82 Nassau St #60351 New York, NY 10038</span>
+        </div>
+        <ul class="SocialLinks__StyledSocialLinks-sc-zkp6f3-0 kcuEqy social-links">
+            <li class="SocialLinks__SocialIcon-sc-zkp6f3-1 cMoWix">
+                <a href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#666666" role="img" aria-label="[title + description]">
+                        <title>LinkedIn Icon</title>
+                        <desc>Headout's LinkedIn Handle</desc>
+                        <g clip-path="url(#clip0_95_4455)">
+                            <path d="M14.3043 1.00011H1.6087C1.26087 1.00011 1 1.26261 1 1.61261V14.4751C1 14.7376 1.26087 15.0001 1.6087 15.0001H14.3913C14.7391 15.0001 15 14.7376 15 14.3876V1.61261C14.913 1.26261 14.6522 1.00011 14.3043 1.00011ZM5.08696 12.9001H3.08696V6.25011H5.17391V12.9001H5.08696ZM4.13043 5.37511C3.43478 5.37511 2.91304 4.76261 2.91304 4.15011C2.91304 3.45011 3.43478 2.92511 4.13043 2.92511C4.82609 2.92511 5.34783 3.45011 5.34783 4.15011C5.26087 4.76261 4.73913 5.37511 4.13043 5.37511ZM12.8261 12.9001H10.7391V9.66261C10.7391 8.87511 10.7391 7.91261 9.69565 7.91261C8.65217 7.91261 8.47826 8.78761 8.47826 9.66261V12.9876H6.3913V6.25011H8.3913V7.12511C8.65217 6.60011 9.34783 6.07511 10.3043 6.07511C12.3913 6.07511 12.7391 7.47511 12.7391 9.22511V12.9001H12.8261Z"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_95_4455">
+                                <rect width="16" height="16" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </li>
+            <li class="SocialLinks__SocialIcon-sc-zkp6f3-1 cMoWix">
+                <a href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#666666" role="img" aria-label="[title + description]">
+                        <title>Instagram Icon</title>
+                        <desc>Headout's Instagram Handle</desc>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00015 1C6.09891 1 5.86044 1.00793 5.11422 1.042C4.53331 1.0543 3.95867 1.16474 3.41459 1.36863C2.9478 1.54429 2.52484 1.81943 2.17509 2.17495C1.81902 2.52452 1.54336 2.94743 1.36727 3.41429C1.16336 3.95831 1.05291 4.53288 1.0406 5.11372C1.00793 5.85985 1 6.09829 1 7.9993C1 9.90031 1.00793 10.1388 1.042 10.8849C1.05431 11.4657 1.16476 12.0403 1.36867 12.5843C1.54476 13.0512 1.82042 13.4741 2.17649 13.8237C2.52611 14.1797 2.94907 14.4553 3.41599 14.6314C3.96007 14.8353 4.53471 14.9457 5.11562 14.958C5.8623 14.9921 6.10031 15 8.00155 15C9.90279 15 10.1413 14.9921 10.8875 14.958C11.4684 14.9457 12.043 14.8353 12.5871 14.6314C13.0519 14.4512 13.4741 14.1761 13.8266 13.8237C14.1791 13.4712 14.4543 13.0491 14.6344 12.5843C14.8383 12.0403 14.9488 11.4657 14.9611 10.8849C14.9952 10.1383 15.0031 9.90031 15.0031 7.9993C15.0031 6.09829 14.9952 5.85985 14.9611 5.11372C14.9488 4.53288 14.8383 3.95831 14.6344 3.41429C14.4583 2.94743 14.1827 2.52452 13.8266 2.17495C13.477 1.81892 13.054 1.5433 12.5871 1.36723C12.043 1.16334 11.4684 1.0529 10.8875 1.0406C10.1399 1.00793 9.90139 1 8.00015 1ZM11.7344 5.10327C12.1984 5.10327 12.5745 4.72716 12.5745 4.2632C12.5745 3.79924 12.1984 3.42313 11.7344 3.42313C11.2704 3.42313 10.8942 3.79924 10.8942 4.2632C10.8942 4.72716 11.2704 5.10327 11.7344 5.10327ZM7.99844 4.406C7.28773 4.406 6.59298 4.61672 6.00205 5.01152C5.41112 5.40632 4.95054 5.96747 4.67856 6.624C4.40659 7.28053 4.33542 8.00296 4.47408 8.69992C4.61273 9.39689 4.95497 10.0371 5.45752 10.5396C5.96006 11.0421 6.60035 11.3843 7.2974 11.5229C7.99446 11.6615 8.71697 11.5904 9.37358 11.3184C10.0302 11.0465 10.5914 10.586 10.9863 9.99512C11.3811 9.40426 11.5919 8.70959 11.5919 7.99897C11.5919 7.04605 11.2133 6.13217 10.5394 5.45835C9.86547 4.78454 8.95147 4.406 7.99844 4.406ZM7.99844 10.3321C7.53694 10.3321 7.08581 10.1952 6.70208 9.93887C6.31836 9.68251 6.01928 9.31813 5.84268 8.89181C5.66607 8.46549 5.61986 7.99638 5.70989 7.5438C5.79993 7.09123 6.02216 6.67551 6.34849 6.34922C6.67482 6.02293 7.09059 5.80072 7.54322 5.7107C7.99585 5.62068 8.46502 5.66688 8.89139 5.84347C9.31776 6.02005 9.68218 6.31909 9.93858 6.70277C10.195 7.08645 10.3318 7.53753 10.3318 7.99897C10.3318 8.61775 10.086 9.21118 9.64839 9.64872C9.2108 10.0863 8.61729 10.3321 7.99844 10.3321Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="SocialLinks__SocialIcon-sc-zkp6f3-1 cMoWix">
+                <a href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#666666" role="img" aria-label="[title + description]">
+                        <title>Youtube Icon</title>
+                        <desc>Headout's Youtube Handle</desc>
+                        <path d="M15.8 4.80009C15.6 3.50009 15 2.60009 13.6 2.40009C11.4 2.00009 8 2.00009 8 2.00009C8 2.00009 4.6 2.00009 2.4 2.40009C1 2.60009 0.3 3.50009 0.2 4.80009C0 6.10009 0 8.00009 0 8.00009C0 8.00009 0 9.90009 0.2 11.2001C0.4 12.5001 1 13.4001 2.4 13.6001C4.6 14.0001 8 14.0001 8 14.0001C8 14.0001 11.4 14.0001 13.6 13.6001C15 13.3001 15.6 12.5001 15.8 11.2001C16 9.90009 16 8.00009 16 8.00009C16 8.00009 16 6.10009 15.8 4.80009ZM6 11.0001V5.00009L11 8.00009L6 11.0001Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="SocialLinks__SocialIcon-sc-zkp6f3-1 cMoWix">
+                <a href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#666666" role="img" aria-label="[title + description]">
+                        <title>Facebook Icon</title>
+                        <desc>Headout's Facebook Handle</desc>
+                        <g clip-path="url(#clip0_95_4461)">
+                            <path d="M16 8.0481C16.0003 6.51919 15.5625 5.0222 14.7385 3.73438C13.9144 2.44656 12.7385 1.42186 11.3501 0.781606C9.96173 0.141349 8.41893 -0.0876463 6.90442 0.121734C5.38991 0.331114 3.96712 0.970101 2.80451 1.96303C1.6419 2.95597 0.788165 4.26126 0.344396 5.72435C-0.0993733 7.18745 -0.114591 8.74707 0.300544 10.2185C0.71568 11.69 1.54378 13.0117 2.68679 14.0272C3.82981 15.0426 5.23986 15.7092 6.75 15.9481V10.3601H4.719V8.0481H6.75V6.2851C6.70627 5.87355 6.7536 5.45742 6.88863 5.0662C7.02366 4.67497 7.24309 4.31824 7.53136 4.02128C7.81964 3.72433 8.1697 3.49441 8.55674 3.34783C8.94379 3.20125 9.35833 3.1416 9.771 3.1731C10.371 3.18098 10.9696 3.23313 11.562 3.3291V5.3001H10.554C10.3823 5.27765 10.2077 5.29409 10.0432 5.34822C9.87874 5.40234 9.72853 5.49276 9.6037 5.61279C9.47887 5.73281 9.38263 5.87937 9.3221 6.04162C9.26157 6.20386 9.23829 6.37765 9.254 6.5501V8.0501H11.473L11.118 10.3621H9.25V15.9531C11.1322 15.6553 12.8464 14.6955 14.0838 13.2463C15.3213 11.7971 16.0008 9.95374 16 8.0481Z"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_95_4461">
+                                <rect width="16" height="16" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </li>
+            <li class="SocialLinks__SocialIcon-sc-zkp6f3-1 cMoWix">
+                <a href="https://www.twitter.com/headout" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#666666" role="img" aria-label="[title + description]">
+                        <title>Twitter Icon</title><desc>Headout's Twitter Handle</desc><path d="M7.3396 9.80109L3.66201 14.0003H1.625L6.38817 8.55908L7.3396 9.80109Z"></path><path d="M8.44922 5.85202L11.8165 2H13.8523L9.39208 7.10089L8.44922 5.85202Z"></path><path d="M14.6368 14.0001H10.5401L1.36133 2H5.56178L14.6368 14.0001ZM11.102 12.7816H12.23L4.94892 3.15458H3.73863L11.102 12.7816Z"></path>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1.3,
+        spaceBetween: 35,
+      },
+      550: {
+        slidesPerView: 1.5,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: 60,
+      },
+      1024: {
+        slidesPerView: 1.5,
+        spaceBetween: 90,
+      },
+    }
+  });
+      </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/translate.js"></script>
+    <script src="./js/valyuta.js"></script>
+</body>
+
+</html>

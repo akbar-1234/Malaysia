@@ -1,0 +1,907 @@
+
+
+.Big_Book_navbar {
+    width: 100%!important;
+    border-bottom-width: 1px!important;
+    border-bottom: 1px solid #ebebeb ;
+    position: sticky!important;
+    background-color: #fff!important;
+    top: 0px;
+    z-index: 998;
+}
+
+.Book_navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: max-content auto max-content max-content;
+    gap: 24px;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 18px 24px;
+    min-height: 5.25rem;
+}
+
+.book_nav_midle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.book_nav_midle p {
+    color: rgb(68, 68, 68);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.book_nav_midle div img {
+    width: 7px;
+}
+
+.book_nav_right button {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0);
+    height: 2.5rem;
+    padding: 0.625rem 0.75rem;
+    border: 1px solid rgb(68, 68, 68);
+    color: rgb(68, 68, 68);
+    transition: 0.3s ease;
+}
+
+.book_nav_right button:hover {
+    background: rgb(128, 0, 255);
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+.book_nav_right button {
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: rgb(68, 68, 68);
+}
+
+.BookLogin {
+    width: 100%;
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+}
+
+.BookLogin_h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BookLogin_h1 h3 {
+    grid-area: title;
+    color: rgb(68, 68, 68);
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+#BookLogin_close {
+    position: absolute; 
+    top: 20px;
+    right: 15px;
+}
+
+.qora2 {
+    display: none !important;
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    left: 0px;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+    z-index: 999;
+}
+
+.minQora2 {
+    display: none;
+    position: fixed;
+    top: 30%;
+    bottom: 30%;
+    right: 35%;
+    left: 35%;
+    z-index: 1000;
+}
+
+.BookLogin_text p {
+    grid-area: subtitle;
+    margin-top: 0.5rem;
+    color: rgb(34, 34, 34);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.BookLogin_text h4 {
+    color: rgb(68, 68, 68);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.BookLogin_text span {
+    color: rgb(102, 102, 102);
+    margin-top: 0.5rem;
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-top: 15px;
+}
+
+.BookLogin_inp {
+    margin-top: 0.5rem;
+}
+
+.BookLogin_inp input {
+    outline: none;
+    width: 100%;
+    padding: 1rem 0.875rem;
+    height: 3rem;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 0.25rem;
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: "SS04";
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #545454;
+}
+
+.BookLogin_inp input::placeholder {
+    color: #a3a3a3;
+}
+
+.BookLogin_inp button {
+    width: 100%;
+    border: none;
+    text-align: center;
+    background: rgb(128, 0, 255);
+    margin-top: 1rem;
+    padding: 0.6875rem 0px 0.8125rem;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+.BookLogin_inp button:hover {
+    background: rgb(119, 1, 236);
+}
+
+.Book_container2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 50px;
+}
+
+.book_red {
+    width: 100%;
+    max-width: 700px;
+    background: rgb(255, 248, 229);
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+}
+
+.bookRed_h1 svg {
+    margin-right: 0.5rem;
+}
+
+.bookRed_h1 span {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+}
+
+.book_red ul {
+    list-style: disc;
+    margin-left: 1.25rem;
+}
+
+.book_red ul li {
+    margin-left: 0.25rem;
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.Select_calendar {
+    margin-top: 3.5rem;
+}
+
+.Select_calendar p {
+    color: rgb(68, 68, 68);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.Select_calendar h1 {
+    color: rgb(68, 68, 68);
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+.Select_calendar p {
+    color: rgb(68, 68, 68);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.SelectPreference_h1 {
+    display: grid;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.SelectPreference_h1 h1 {
+    color: rgb(68, 68, 68);
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+.SelectPreference_yellow {
+    border-radius: 2.25rem;
+    display: grid;
+    -webkit-box-align: center;
+    align-items: center;
+    width: max-content;
+    padding: 0.375rem 0.625rem 0.375rem 0.5rem;
+    grid-template-columns: 0.75rem auto;
+    justify-content: left;
+    column-gap: 0.25rem;
+    background: rgb(255, 242, 204);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.haCrXx {
+    border-radius: 2.25rem;
+    display: grid;
+    -webkit-box-align: center;
+    align-items: center;
+    width: max-content;
+    padding: 0.375rem 0.625rem 0.375rem 0.5rem;
+    grid-template-columns: 0.75rem auto;
+    justify-content: left;
+    column-gap: 0.25rem;
+    background: rgb(255, 242, 204);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.haCrXx svg {
+    height: 0.75rem;
+    width: 0.75rem;
+}
+
+.kyPDpI {
+    color: rgb(68, 68, 68);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.gCKyJW {
+    column-gap: 0.75rem;
+    transform: translateX(0rem);
+    width: 100%;
+    max-width: 1000px;
+    transition: transform 0.2s ease-in-out 0s !important;
+}
+
+.hKpbPK {
+    padding: 1rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row-start: span 2;
+    row-gap: 1rem;
+    align-content: start;
+}
+
+.cUBTAH {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-rows: auto auto 1fr;
+}
+
+.eUdoQg {
+    color: rgb(68, 68, 68);
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    min-height: 75px;
+}
+
+.jXBCpq {
+    display: grid;
+    row-gap: 1rem;
+    align-self: end;
+}
+
+.kjnAMM {
+    row-gap: 1rem;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    height: max-content;
+}
+
+.kTIbnf {
+    display: grid;
+    grid-template-areas:
+        "scratch scratch"
+        "price saved";
+    justify-content: left;
+    gap: 0.25rem;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 0.625rem;
+}
+
+.doOLdh .tour-scratch-price {
+    color: rgb(102, 102, 102);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 12px;
+    letter-spacing: 0px;
+}
+
+.doOLdh .tour-price {
+    color: rgb(68, 68, 68);
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+}
+
+.gFUuAo {
+    padding: 0.125rem 0.25rem 0.1875rem;
+    color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 12px;
+    letter-spacing: 0.2px;
+    background-color: rgb(8, 130, 41);
+    text-transform: none;
+    text-align: center;
+    grid-area: saved;
+}
+
+.iYmuLF {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(102, 0, 204);
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.iYmuLF:hover {
+    background-color: rgb(128, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+.iOOZKo {
+    row-gap: 1rem;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    height: max-content;
+}
+
+.fpWPsP {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0.25rem;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: left;
+    color: rgb(164, 86, 59);
+}
+
+.fpWPsP svg {
+    height: 1rem;
+    width: 1rem;
+    fill: rgb(164, 86, 59);
+}
+
+.cJlOdT ul li {
+    margin-bottom: 0.5rem;
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.ivfIld {
+    color: rgb(164, 86, 59);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.kjnAMM {
+    row-gap: 1rem;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    height: max-content;
+}
+
+.crpWQA {
+    border-top: 0.0625rem dashed rgb(226, 226, 226);
+    margin-top: -0.25rem;
+    padding-top: 0.75rem;
+    color: rgb(102, 102, 102);
+    min-height: 150px;
+}
+
+.crpWQA.crpWQA > *, .crpWQA.crpWQA a {
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.for_descriptions_tickets{
+    display: none;
+}
+
+.crpWQA ul {
+    /* list-style: inherit; */
+    margin-left: 1rem;
+}
+
+.crpWQA ul li {
+    margin-bottom: 0.5rem;
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.kTIbnf .tour-scratch-price > span {
+    color: rgb(102, 102, 102);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+.doOLdh .tour-price {
+    color: rgb(68, 68, 68);
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+}
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+    .UopHr {
+        max-width: 55.0688rem;
+    }
+}
+
+.UopHr {
+    display: none;
+    gap: 2rem 0.5rem;
+    max-width: 49.5625rem;
+    margin-top: 5%;
+}
+
+.dpEanF {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.kPuREg {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    cursor: default;
+    background-color: rgb(255, 248, 239);
+}
+
+.kPuREg .min-clock {
+    height: 1rem;
+    width: 1rem;
+}
+
+.kPuREg div {
+    display: flex;
+    gap: 20px;
+}
+
+#qurbaqa span {
+    color: rgb(164, 86, 59);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+    .jLFxWn {
+        max-width: 55.0688rem;
+    }
+}
+
+.jLFxWn {
+    display: none;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1rem 0px;
+    border-top: 1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(240, 240, 240);
+    max-width: 49.5625rem;
+    margin-top: 3%;
+}
+
+.dXOctt {
+    display: flex;
+    margin: 0px auto;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.eFIuWE {
+    display: grid;
+    row-gap: 0.25rem;
+    place-self: center end;
+    max-width: 25rem;
+    margin-right: auto;
+}
+
+.eFIuWE .tour-name {
+    color: rgb(68, 68, 68);
+}
+
+.dLvdiQ {
+    color: rgb(68, 68, 68);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-feature-settings: "SS04";
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.fCidkU {
+    height: fit-content;
+    min-width: 8.875rem;
+}
+
+.gXTltT {
+    color: rgb(68, 68, 68);
+    font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.hhzaoK {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row;
+    padding: 11px 20px 13px;
+    border-radius: 8px;
+    font-family: halyard-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-feature-settings: normal;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    height: 48px;
+    background-color: rgb(128, 0, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.hhzaoK:hover {
+    background-color: rgb(102, 0, 204);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px) {
+    .Book_container2 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 20px;
+    }
+
+    .SelectPreference {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+@media (max-width:950px) {
+    .minQora2 {
+        display: none;
+        position: fixed;
+        top: 30%;
+        bottom: 30%;
+        right: 20%;
+        left: 20%;
+        z-index: 1000;
+    }
+
+    .book_nav_midle {
+        display: none;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Book_navbar {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 18px 24px;
+        min-height: 5.25rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .gCKyJW {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 100%;
+        grid-gap: 0.75rem;
+    }
+
+    .book_red ul li {
+        margin-left: 0.25rem;
+        font-family: halyard-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-feature-settings: normal;
+        line-height: 20px;
+        letter-spacing: 0px;
+        margin-bottom: 0.5rem;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .minQora2 {
+        display: none;
+        position: fixed;
+        top: 30%;
+        bottom: 30%;
+        right: 5%;
+        left: 5%;
+        z-index: 1000;
+    }
+
+    .BookLogin {
+        width: 100%;
+        max-width: 450px;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+        box-sizing: border-box;
+        overflow: auto;
+        position: relative;
+    }
+}
